@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.edu.neusoft.lixu524.foodorder.Fragment.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light">
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10"
+            android:hint="请输入搜索关键字"
+            android:inputType="textPersonName"
+            android:text="酸菜鱼" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.01"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/ic_search_normal" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
